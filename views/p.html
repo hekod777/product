@@ -1,0 +1,21 @@
+{% extends './layout.html'%}
+{%block main%}
+<h2>here are the products</h2>
+<ul>
+{% for item in product %}
+	<li>
+    	{{item.name}}
+    	</br>
+        <form action = '/p/{{item.id}}?_method=DELETE' method = 'POST'>
+        <button type = 'submit'>Delete</button>
+        </form>
+        
+        <form action = '/p/{{item.id}}' method = 'GET'>
+        <button type = 'submit'>Edit</button>
+        </form>
+    </li>
+{% endfor %}
+</ul>
+
+
+{%endblock%}

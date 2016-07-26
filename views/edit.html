@@ -1,0 +1,10 @@
+{% extends './layout.html'%}
+{% block main %}
+<form action = '/p/:id' method = POST>
+<label for = 'name field'>Name:</label>
+<input name = 'name' type = 'text' id = 'name_field'>
+<input type = 'submit' value = 'Sumbit edit!'>
+
+
+</form>
+{% endblock %}

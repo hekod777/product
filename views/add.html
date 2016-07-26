@@ -1,0 +1,15 @@
+{% extends './layout.html'%}
+{% block main%}
+
+<form action = '/add' method = 'POST'>
+<label for = 'name_field'> Name: </label>
+<input name = 'name' type = 'text' id = 'name_field'/>
+
+<label for = 'id_field'>id: </label>
+<input name = 'id' type = 'text' id = 'id_field'>
+
+<input type = 'submit' value = 'Submit!'>
+
+</form>
+
+{% endblock %}
