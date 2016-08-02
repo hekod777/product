@@ -1,10 +1,10 @@
 {% extends './layout.html'%}
 {% block main %}
-<form action = '/p/:id' method = POST>
-<label for = 'name field'>Name:</label>
-<input name = 'name' type = 'text' id = 'name_field'>
-<input type = 'submit' value = 'Sumbit edit!'>
+  <form action = '/products/{{ product.id }}?_method=PUT' method = POST>
+  <label for = 'name field'>Name:</label>
+  <input name = 'name' value='{{product.name}}' type = 'text' id = 'name_field'>
+  <input type = 'submit' value = 'Sumbit edit!'>
 
 
-</form>
+  </form>
 {% endblock %}
